@@ -34,6 +34,8 @@ type TimeSlot = {
   events: Event[];
 };
 
+const festivalIntro = `Nog twee maanden en dan zijn GroenLinks en PvdA opgegaan in PRO. Reden voor een feest — om wat geweest is én om wat nieuw is. Dat moet legendarisch worden! Op zaterdag 27 juni kijken we één keer achterom naar 80 jaar PvdA en 36 jaar GroenLinks in Groningen, en vieren we samen de oprichting van de nieuwe partij en het begin van de zomer.`;
+
 const schedule: TimeSlot[] = [
   {
     id: "hele-dag",
@@ -51,34 +53,13 @@ const schedule: TimeSlot[] = [
   {
     id: "10u",
     time: "10:00",
-    timeEnd: "10:30",
+    timeEnd: "13:00",
     events: [
       {
-        id: "huis-aan-huis-training",
-        title: "Huis-aan-huis training voor nieuwe leden",
+        id: "huis-aan-huis",
+        title: "Huis-aan-Huizen in de Oosterpoort",
         locations: ["PvdA Pand"],
-        description: "Training door Janny.",
-        signup: true,
-      },
-    ],
-  },
-  {
-    id: "11u",
-    time: "11:00",
-    events: [
-      {
-        id: "kindertent",
-        title: "Kinder- en ouderworkshops",
-        timeEnd: "16:00",
-        locations: ["Circustent Babel"],
-        signup: true,
-      },
-      {
-        id: "huis-aan-huis-oosterpoort",
-        title: "Huis-aan-huis in Oosterpoort",
-        timeEnd: "13:00",
-        locations: ["PvdA Pand"],
-        description: "Start vanaf het PvdA pand.",
+        description: "10:00–10:30 workshop · 10:30–13:00 huis-aan-huizen (aansluitend lunch). Altijd al eens mee willen lopen? Dit is je kans! Vooraf een korte interactieve workshop over wat huis-aan-huizen inhoudt. Je eerste keer? Dan word je gekoppeld aan een doorgewinterde huis-aan-huizer. Tip: Kom op de fiets!",
         signup: true,
       },
     ],
@@ -92,26 +73,7 @@ const schedule: TimeSlot[] = [
         id: "pro-look",
         title: "Ga met een PRO look de zomer in!",
         locations: ["GL Pand"],
-        description: "PRO armbandjes en t-shirts maken.",
-        signup: true,
-      },
-    ],
-  },
-  {
-    id: "12u",
-    time: "12:00",
-    timeEnd: "13:00",
-    events: [
-      {
-        id: "fietstocht-1",
-        title: "Sociaaldemocratische fietstocht",
-        locations: [],
-        signup: true,
-      },
-      {
-        id: "wandeltocht-1",
-        title: "Overwinning in de openbare ruimte — wandeltocht",
-        locations: [],
+        description: "Tie dye t-shirts maken in de nieuwe PRO kleuren én friendship bracelets (Taylor Swift stijl) met PRO/PROTEST leuzen. Zo ga je als een pro de linkse zomer in! Neem een wit katoenen t-shirt mee.",
         signup: true,
       },
     ],
@@ -136,9 +98,9 @@ const schedule: TimeSlot[] = [
     events: [
       {
         id: "jasjes-tasjes",
-        title: "Van jasjes naar tasjes",
+        title: "Workshop: Van jasjes naar tasjes",
         locations: ["Noorderhaven"],
-        description: "Bij Shirley thuis.",
+        description: "De groene en rode jasjes hebben we flink op voorraad — en ze worden straks minder gedragen. Geef ze een mooi nieuw leven als tasje, etui of eigen ontwerp! Neem je naaimachine mee als je die hebt, en eventueel knopen, ritsen en ander naaigerei. Adres volgt na aanmelding.",
         signup: true,
       },
     ],
@@ -149,35 +111,26 @@ const schedule: TimeSlot[] = [
     events: [
       {
         id: "proposters",
-        title: "ProPosters maken met Minerva",
+        title: "PRO-Posters maken met Minerva",
         timeEnd: "16:30",
         locations: ["De Loods"],
-        description: "Bij Kees in de loods, Aduarderdiepsterweg.",
+        description: "Samen met Kees Hermanides en Minerva-studenten posters maken én drukken voor de gloednieuwe partij. In de kleuren en thema's van onze beweging maak jij knallers — voor onze panden, je slaapkamer of kantoor! Adres: Friesestraatweg 448.",
         signup: true,
       },
       {
-        id: "fietstocht-2",
-        title: "Sociaaldemocratische fietstocht",
+        id: "fietstocht",
+        title: "Langs sporen van de sociaaldemocratie in Groningen",
         timeEnd: "15:00",
-        locations: [],
-        description: "2e ronde",
-        signup: true,
-      },
-      {
-        id: "wandeltocht-2",
-        title: "Overwinning in de openbare ruimte — wandeltocht",
-        timeEnd: "15:00",
-        locations: [],
-        description: "2e ronde",
+        locations: ["PvdA Pand"],
+        description: "Onder begeleiding van Jan R. Lunsing fietsen maximaal tien deelnemers langs historische sporen — van één van de oprichters van de SDAP tot het PvdA Pand, waar de volgende stappen worden gezet. Start: Haddingestraat 10.",
         signup: true,
       },
       {
         id: "filmpremiere",
-        title: "Filmpremière: 'Verschilmakers'",
+        title: "Filmpremière: 'Verschilmakers — politieke helden in jouw buurt'",
         timeEnd: "16:00",
         locations: ["PvdA Pand"],
-        description:
-          "Politieke helden in jouw buurt. Welkomstwoord door Sharon Dijksma, gevolgd door première en nagesprek.",
+        description: "Documentaire van Arnold van Bruggen over vier PvdA-wethouders, gemaakt ter gelegenheid van het 125-jarig bestaan van het CLB. Aansluitend gesprek met Groningse wethouders Carine Bloemhoff en Rik van Niejenhuis. Adres: Haddingestraat 10.",
         signup: true,
       },
       {
@@ -191,16 +144,44 @@ const schedule: TimeSlot[] = [
     ],
   },
   {
+    id: "1430u",
+    time: "14:30",
+    timeEnd: "16:30",
+    events: [
+      {
+        id: "circus",
+        title: "Ontdek jouw talent in het circus!",
+        locations: ["Circustent Babel"],
+        description: "Koorddansen, jongleren, lopen op een bal, acrobatiek — onder begeleiding van echte circusartiesten. Voor kinderen én ouders! Bij acrobatiek leer je samenwerken, want alleen samen blijft een menselijke piramide staan. Vrijblijvend meedoen. Adres: Neutronstraat 3.",
+        signup: true,
+      },
+    ],
+  },
+  {
     id: "15u",
     time: "15:00",
     timeEnd: "16:00",
     events: [
       {
         id: "koor",
-        title: "Strijdliederen koor",
+        title: "Workshop: Zing je mee?",
         locations: ["Noorderhaven"],
-        description: "Bij Shirley thuis.",
+        description: "Of je nu een volleerde zanger bent of alleen onder de douche zingt — iedereen is welkom! We studeren in korte tijd een krachtig, revolutionair PRO lied in, dat we 's avonds met het publiek delen. Adres volgt na aanmelding.",
         signup: true,
+      },
+    ],
+  },
+  {
+    id: "17u",
+    time: "17:00",
+    timeEnd: "17:30",
+    events: [
+      {
+        id: "de-ophef",
+        title: "DE OPHEF",
+        locations: ["Circustent Babel"],
+        description: "Na een dag vol programma komen we samen en gaan we gezamenlijk een nieuwe periode tegemoet. Dit bijzondere moment wordt gemarkeerd door een verrassing. Wat dat is? Bijzijn is meemaken!",
+        signup: false,
       },
     ],
   },
@@ -213,6 +194,7 @@ const schedule: TimeSlot[] = [
         id: "borrel-bbq",
         title: "Borrel & BBQ",
         locations: ["Buiten bij De Loods"],
+        description: "Van vlees tot de lekkerste vega en vegan gerechten van de barbecue. Het glas heffen met elkaar.",
         signup: false,
       },
     ],
@@ -226,8 +208,7 @@ const schedule: TimeSlot[] = [
         id: "feest",
         title: "Feest!",
         locations: ["De Loods"],
-        description:
-          "Openingsact om 20:15, gevolgd door Lörk (20:15–21:00) en Fatal Injection (21:00–23:00).",
+        description: "De voetjes van de vloer tijdens de spetterende afsluiting. Openingsact om 20:15, gevolgd door Lörk (20:15–21:00) en Fatal Injection (21:00–23:00).",
         signup: false,
       },
     ],
@@ -291,10 +272,13 @@ export default function Home() {
       {/* PROGRAMMA */}
       <section id="programma" className="py-16 px-4">
         <div className="max-w-4xl mx-auto bg-white/90 backdrop-blur-sm rounded-2xl p-8 md:p-12 shadow-xl">
-          <h2 className="font-bebas text-5xl md:text-6xl text-[#D42B1E] tracking-wide mb-2">
+          <h2 className="font-bebas text-5xl md:text-6xl text-[#D42B1E] tracking-wide mb-4">
             Programma
           </h2>
-          <p className="text-gray-600 mb-10 text-sm md:text-base">
+          <p className="text-gray-800 mb-6 text-base md:text-lg leading-relaxed">
+            {festivalIntro}
+          </p>
+          <p className="text-gray-500 mb-10 text-sm border-t border-gray-200 pt-6">
             Schrijf je in voor de onderdelen die jou aanspreken — sommige activiteiten zijn beperkt
             qua plek. Inschrijven kan via de knoppen bij elk onderdeel.
           </p>
