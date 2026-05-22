@@ -352,8 +352,10 @@ export default function Home() {
             Doe een bijdrage
           </h2>
           <p className="text-white/80 max-w-xl mx-auto mb-10 text-base leading-relaxed">
-            Festival De Ophef heeft geen tickets — maar dit allemaal organiseren is flink duur.
-            Doe een financiële bijdrage en help ons dit festival mogelijk te maken.
+            Festival De Ophef heeft geen tickets, maar dit allemaal organiseren is flink duur.
+            Doe een financiële bijdrage en help ons dit festival mogelijk te maken. Alle bijdragen
+            zijn natuurlijk welkom. Met gemiddeld 15 euro per persoon zijn we al bijna uit de kosten!
+            Mocht het niet lukken, uiteraard ook geen probleem.
           </p>
 
           <div className="grid grid-cols-3 gap-4 mb-8 max-w-lg mx-auto">
