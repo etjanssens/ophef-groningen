@@ -216,9 +216,9 @@ const schedule: TimeSlot[] = [
 ];
 
 const donations = [
-  { id: "15", label: "€15", description: "Vaste bijdrage", href: "#" },
-  { id: "30", label: "€30", description: "Vaste bijdrage", href: "#" },
-  { id: "vrij", label: "Kies zelf", description: "Eigen bedrag", href: "#" },
+  { id: "15", label: "15 euro", href: "#" },
+  { id: "30", label: "30 euro", href: "#" },
+  { id: "vrij", label: "Kies zelf een bedrag", href: "#" },
 ];
 
 export default function Home() {
@@ -365,10 +365,9 @@ export default function Home() {
                 href={tier.href}
                 className="group bg-white/10 hover:bg-white/20 border border-white/20 hover:border-white/40 rounded-xl p-5 text-center transition-all flex flex-col gap-2"
               >
-                <span className="font-bebas text-4xl text-white group-hover:scale-110 transition-transform inline-block">
+                <span className="font-bebas text-2xl text-white group-hover:scale-110 transition-transform inline-block">
                   {tier.label}
                 </span>
-                <span className="text-white/70 text-xs leading-snug">{tier.description}</span>
               </a>
             ))}
           </div>
