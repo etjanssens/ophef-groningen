@@ -216,10 +216,9 @@ const schedule: TimeSlot[] = [
 ];
 
 const donations = [
-  { id: "steun", label: "Steunbijdrage", amount: "€10", description: "Voor wie wat minder ruimte heeft" },
-  { id: "solidair", label: "Solidair", amount: "€20", description: "De standaardbijdrage" },
-  { id: "vriend", label: "Vriendbijdrage", amount: "€35", description: "Een extra steun in de rug" },
-  { id: "held", label: "Held", amount: "€50", description: "Voor wie het festival echt mogelijk maakt" },
+  { id: "15", label: "€15", description: "Vaste bijdrage", href: "#" },
+  { id: "30", label: "€30", description: "Vaste bijdrage", href: "#" },
+  { id: "vrij", label: "Kies zelf", description: "Eigen bedrag", href: "#" },
 ];
 
 export default function Home() {
@@ -357,18 +356,17 @@ export default function Home() {
             Doe een financiële bijdrage en help ons dit festival mogelijk te maken.
           </p>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+          <div className="grid grid-cols-3 gap-4 mb-8 max-w-lg mx-auto">
             {donations.map((tier) => (
               <a
                 key={tier.id}
-                href="#"
+                href={tier.href}
                 className="group bg-white/10 hover:bg-white/20 border border-white/20 hover:border-white/40 rounded-xl p-5 text-center transition-all flex flex-col gap-2"
               >
                 <span className="font-bebas text-4xl text-white group-hover:scale-110 transition-transform inline-block">
-                  {tier.amount}
+                  {tier.label}
                 </span>
-                <span className="font-bold text-white text-sm">{tier.label}</span>
-                <span className="text-white/60 text-xs leading-snug">{tier.description}</span>
+                <span className="text-white/70 text-xs leading-snug">{tier.description}</span>
               </a>
             ))}
           </div>
