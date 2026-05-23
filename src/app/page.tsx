@@ -208,7 +208,7 @@ const schedule: TimeSlot[] = [
         id: "feest",
         title: "Feest!",
         locations: ["De Loods"],
-        description: "De voetjes van de vloer tijdens de spetterende afsluiting. Openingsact om 20:15, gevolgd door Lörk (20:15–21:00) en Fatal Injection (21:00–23:00).",
+        description: "De voetjes van de vloer tijdens de spetterende afsluiting.",
         signup: false,
       },
     ],
@@ -216,9 +216,9 @@ const schedule: TimeSlot[] = [
 ];
 
 const donations = [
-  { id: "15", label: "15 euro", href: "#" },
-  { id: "30", label: "30 euro", href: "#" },
-  { id: "vrij", label: "Kies zelf een bedrag", href: "#" },
+  { id: "15", label: "15 euro", href: "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=SpKSr4_ySoKDzPauErmoNg" },
+  { id: "30", label: "30 euro", href: "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=tf8wVXwPQqKZcLCywTqh6g" },
+  { id: "vrij", label: "Kies zelf een bedrag", href: "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=30Pz9Q4pQbS8yoK5rG1DzA" },
 ];
 
 export default function Home() {
