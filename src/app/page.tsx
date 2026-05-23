@@ -231,7 +231,7 @@ const schedule: TimeSlot[] = [
         title: "Borrel & BBQ",
         locations: ["Buiten bij De Loods"],
         description: "Er wordt gebarbecued — van vlees tot de lekkerste vega en vegan gerechten — en we heffen het glas met elkaar.",
-        signup: false,
+        signup: true,
       },
     ],
   },
@@ -245,11 +245,39 @@ const schedule: TimeSlot[] = [
         title: "Feest!",
         locations: ["De Loods"],
         description: "De voetjes van de vloer tijdens de spetterende afsluiting van de dag!",
-        signup: false,
+        signup: true,
       },
     ],
   },
 ];
+
+const FORM_BASE =
+  "https://docs.google.com/forms/d/e/1FAIpQLSduTAq9fcfvUPA-tbZYDWTRYFa8lWjgd5oVPj75pjSnaLZ1-w/viewform?usp=pp_url";
+
+// Pre-fill URLs: elke knop opent het form met het juiste vakje al aangevinkt.
+// Veld-IDs gevonden via de gepubliceerde form-structuur:
+//   ochtend   → entry.610504630
+//   lunch     → entry.2064543520
+//   middag    → entry.1995003765
+//   avond     → entry.1376698863
+const formUrls: Record<string, string> = {
+  "huis-aan-huis":    `${FORM_BASE}&entry.610504630=10u-1030u%3A+huis-aan-huis+training&entry.610504630=11u-13u%3A+huis-aan-huis+in+de+Oosterpoort`,
+  "pro-look":         `${FORM_BASE}&entry.610504630=1130u-13u%3A+Ga+met+een+PRO+look+de+zomer+in!`,
+  "fietstocht-1":     `${FORM_BASE}&entry.610504630=12u-13u%3A+Langs+de+sporen+van+de+sociaaldemocratie`,
+  "wandeltocht-1":    `${FORM_BASE}&entry.610504630=12u-13u%3A+Overwinningen+in+de+openbare+ruimte`,
+  "buffet":           `${FORM_BASE}&entry.2064543520=Ik+lunch+graag+mee!`,
+  "jasjes-tasjes":    `${FORM_BASE}&entry.1995003765=13u-1430u%3A+Van+jasjes+naar+tasjes`,
+  "proposters":       `${FORM_BASE}&entry.1995003765=14u-1630u%3A+PRO-Posters+maken+met+Minerva`,
+  "fietstocht-2":     `${FORM_BASE}&entry.1995003765=14u-15u%3A+Langs+de+sporen+van+de+sociaaldemocratie`,
+  "wandeltocht-2":    `${FORM_BASE}&entry.1995003765=14u-15u%3A+Overwinningen+in+de+openbare+ruimte`,
+  "filmpremiere":     `${FORM_BASE}&entry.1995003765=14u-16u%3A+Verschilmakers+%E2%80%93+politieke+helden+in+jouw+buurt`,
+  "boek-presentatie": `${FORM_BASE}&entry.1995003765=14u-16u%3A+Een+portret+van+GroenLinks`,
+  "kinderen":         `${FORM_BASE}&entry.1995003765=1430u-1630u%3A+Kinderworkshop+%22...%22`,
+  "circus":           `${FORM_BASE}&entry.1995003765=1430u-1630u+Circus+workshop+ouder-kind`,
+  "koor":             `${FORM_BASE}&entry.1995003765=15u-16u%3A+zing+je+mee+in+het+koor%3F`,
+  "borrel-bbq":       `${FORM_BASE}`,
+  "feest":            `${FORM_BASE}&entry.1376698863=20u-23u%3A+Feest!`,
+};
 
 const donations = [
   { id: "15", label: "15 euro", href: "https://betaalverzoek.rabobank.nl/betaalverzoek/?id=SpKSr4_ySoKDzPauErmoNg" },
@@ -364,7 +392,9 @@ export default function Home() {
                       </div>
                       {event.signup && (
                         <a
-                          href="#"
+                          href={formUrls[event.id] ?? FORM_BASE}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="mt-auto inline-block text-center bg-[#1E6B28] hover:bg-[#2A8A38] text-white text-xs font-bold px-3 py-1.5 rounded transition-colors"
                         >
                           Schrijf je in
