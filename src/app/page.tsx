@@ -267,7 +267,6 @@ export default function Home() {
           <div className="hidden md:flex items-center gap-6 text-sm font-medium tracking-wide">
             <a href="#programma" className="hover:underline">Programma</a>
             <a href="#doneer" className="hover:underline">Doneer</a>
-            <a href="#praktisch" className="hover:underline">Praktisch</a>
           </div>
           <a
             href="#doneer"
@@ -416,37 +415,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PRAKTISCH */}
-      <section id="praktisch" className="py-16 px-4">
-        <div className="max-w-4xl mx-auto bg-white/90 backdrop-blur-sm rounded-2xl p-8 md:p-12 shadow-xl">
-          <h2 className="font-bebas text-5xl md:text-6xl text-[#D42B1E] tracking-wide mb-10">
-            Praktisch
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div>
-              <h3 className="font-bold text-lg mb-2">Datum & Tijd</h3>
-              <p className="text-gray-600">
-                Zaterdag 27 juni 2026<br />
-                11:00 – 23:00
-              </p>
-            </div>
-            <div>
-              <h3 className="font-bold text-lg mb-2">Locaties</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Het festival speelt zich af op meerdere plekken in Groningen. Adressen per onderdeel
-                volgen binnenkort.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-bold text-lg mb-2">Toegang</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Geen tickets nodig. Vrije toegang voor iedereen. Voor sommige onderdelen is
-                inschrijving vereist vanwege de capaciteit.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* FOOTER */}
       <footer className="bg-black/75 backdrop-blur-sm text-white py-10 px-4">
