@@ -340,10 +340,19 @@ export default function Home() {
           <p className="text-gray-800 mb-6 text-base md:text-lg leading-relaxed">
             {festivalIntro}
           </p>
-          <p className="text-gray-500 mb-10 text-sm border-t border-gray-200 pt-6">
-            Schrijf je in voor de onderdelen die jou aanspreken — sommige activiteiten zijn beperkt
-            qua plek. Inschrijven kan via de knoppen bij elk onderdeel.
-          </p>
+          <div className="border-t border-gray-200 pt-6 mb-10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <p className="text-gray-500 text-sm">
+              Sommige activiteiten zijn beperkt qua plek — meld je aan via het formulier.
+            </p>
+            <a
+              href={FORM_BASE}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 bg-[#1E6B28] hover:bg-[#2A8A38] text-white font-bold px-6 py-2.5 rounded transition-colors shadow text-sm"
+            >
+              Schrijf je in voor activiteiten
+            </a>
+          </div>
 
           {/* Location legend */}
           <div className="flex flex-wrap gap-2 mb-10">
@@ -390,16 +399,6 @@ export default function Home() {
                           <LocationBadge key={loc} name={loc} />
                         ))}
                       </div>
-                      {event.signup && (
-                        <a
-                          href={formUrls[event.id] ?? FORM_BASE}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="mt-auto inline-block text-center bg-[#1E6B28] hover:bg-[#2A8A38] text-white text-xs font-bold px-3 py-1.5 rounded transition-colors"
-                        >
-                          Schrijf je in
-                        </a>
-                      )}
                     </div>
                   ))}
                 </div>
