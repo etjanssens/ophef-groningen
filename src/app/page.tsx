@@ -34,7 +34,7 @@ type TimeSlot = {
   events: Event[];
 };
 
-const festivalIntro = `Nog twee maanden en dan zijn GroenLinks en PvdA opgegaan in PRO. Reden voor een feest — om wat geweest is én om wat nieuw is. Dat moet legendarisch worden! Op zaterdag 27 juni kijken we één keer achterom naar 80 jaar PvdA en 36 jaar GroenLinks in Groningen, en vieren we samen de oprichting van de nieuwe partij en het begin van de zomer.`;
+const festivalIntro = `Nog twee maanden en dan zijn GroenLinks en PvdA opgegaan in PRO. Reden voor een feest; om wat geweest is en om wat nieuw is. Dat doen we niet zomaar, dat moet legendarisch worden! Daarom organiseren we op zaterdag 27 juni de hele dag Festival de Ophef. Een dag waarop we nog één keer achteromkijken naar, stil staan bij en vieren van 80 jaar PvdA en 36 jaar GroenLinks in Groningen. En een avond om de oprichting van de nieuwe partij en het begin van de zomer te vieren!`;
 
 const schedule: TimeSlot[] = [
   {
@@ -59,7 +59,28 @@ const schedule: TimeSlot[] = [
         id: "huis-aan-huis",
         title: "Huis-aan-Huizen in de Oosterpoort",
         locations: ["PvdA Pand"],
-        description: "10:00–10:30 workshop · 10:30–13:00 huis-aan-huizen (aansluitend lunch). Altijd al eens mee willen lopen? Dit is je kans! Vooraf een korte interactieve workshop over wat huis-aan-huizen inhoudt. Je eerste keer? Dan word je gekoppeld aan een doorgewinterde huis-aan-huizer. Tip: Kom op de fiets!",
+        description: "10:00–10:30 workshop · 10:30–13:00 huis-aan-huizen (aansluitend lunch in het PvdA Pand!). Altijd al eens mee willen lopen, maar tot nu toe niet gedurfd of is het er niet van gekomen? Dit is je kans! Vooraf een korte, interactieve workshop over wat huis-aan-huizen inhoudt en hoe je dit het beste aanpakt. Je eerste keer? Dan word je gekoppeld aan een doorgewinterde huis-aan-huizer. Tip: Kom op de fiets! Adres: Haddingestraat 10.",
+        signup: true,
+      },
+    ],
+  },
+  {
+    id: "11u",
+    time: "11:00",
+    timeEnd: "12:00",
+    events: [
+      {
+        id: "fietstocht-1",
+        title: "Langs sporen van de sociaaldemocratie in Groningen",
+        locations: [],
+        description: "Onder begeleiding van Jan R. Lunsing fietsen maximaal tien deelnemers langs historische sporen — van één van de oprichters van de SDAP tot het PvdA Pand, waar de volgende stappen worden gezet. Start: Begraafplaats Esserveld. Ook ronde 2 om 14:00.",
+        signup: true,
+      },
+      {
+        id: "wandeltocht-1",
+        title: "Overwinningen in de openbare ruimte",
+        locations: [],
+        description: "Wandel- en fietstocht langs grote en kleine projecten die het wonen en leven in onze gemeente mooier, leuker, veiliger, gezonder én groener hebben gemaakt. Van Dudok aan het diep tot het Zuiderplantsoen. Start: volgt. Ook ronde 2 om 14:00.",
         signup: true,
       },
     ],
@@ -73,7 +94,7 @@ const schedule: TimeSlot[] = [
         id: "pro-look",
         title: "Ga met een PRO look de zomer in!",
         locations: ["GL Pand"],
-        description: "Tie dye t-shirts maken in de nieuwe PRO kleuren én friendship bracelets (Taylor Swift stijl) met PRO/PROTEST leuzen. Zo ga je als een pro de linkse zomer in! Neem een wit katoenen t-shirt mee.",
+        description: "Tie dye t-shirts maken in de nieuwe PRO kleuren én friendship bracelets (Taylor Swift stijl) met PRO/PROTEST leuzen. Zo ga je als een pro de linkse zomer in! Shirts niet inbegrepen — neem een wit katoenen t-shirt mee.",
         signup: true,
       },
     ],
@@ -100,7 +121,7 @@ const schedule: TimeSlot[] = [
         id: "jasjes-tasjes",
         title: "Workshop: Van jasjes naar tasjes",
         locations: ["Noorderhaven"],
-        description: "De groene en rode jasjes hebben we flink op voorraad — en ze worden straks minder gedragen. Geef ze een mooi nieuw leven als tasje, etui of eigen ontwerp! Neem je naaimachine mee als je die hebt, en eventueel knopen, ritsen en ander naaigerei. Adres volgt na aanmelding.",
+        description: "De groene en rode jasjes hebben we flink op voorraad en gaan we straks minder dragen. Geef ze een nieuw leven als tasje, etui of eigen ontwerp! Patronen en ideeën worden geleverd. Neem je naaimachine, lockmachine en naaigerei (knopen, ritsen) mee als je die hebt. Adres volgt na aanmelding.",
         signup: true,
       },
     ],
@@ -118,11 +139,19 @@ const schedule: TimeSlot[] = [
         signup: true,
       },
       {
-        id: "fietstocht",
+        id: "fietstocht-2",
         title: "Langs sporen van de sociaaldemocratie in Groningen",
         timeEnd: "15:00",
-        locations: ["PvdA Pand"],
-        description: "Onder begeleiding van Jan R. Lunsing fietsen maximaal tien deelnemers langs historische sporen — van één van de oprichters van de SDAP tot het PvdA Pand, waar de volgende stappen worden gezet. Start: Haddingestraat 10.",
+        locations: [],
+        description: "Ronde 2. Onder begeleiding van Jan R. Lunsing fietsen maximaal tien deelnemers langs historische sporen. Start: Begraafplaats Esserveld.",
+        signup: true,
+      },
+      {
+        id: "wandeltocht-2",
+        title: "Overwinningen in de openbare ruimte",
+        timeEnd: "15:00",
+        locations: [],
+        description: "Ronde 2. Wandel- en fietstocht langs bijzondere projecten die het leven in Groningen mooier, groener en veiliger maakten. Start: volgt.",
         signup: true,
       },
       {
@@ -130,15 +159,15 @@ const schedule: TimeSlot[] = [
         title: "Filmpremière: 'Verschilmakers — politieke helden in jouw buurt'",
         timeEnd: "16:00",
         locations: ["PvdA Pand"],
-        description: "Documentaire van Arnold van Bruggen over vier PvdA-wethouders, gemaakt ter gelegenheid van het 125-jarig bestaan van het CLB. Aansluitend gesprek met Groningse wethouders Carine Bloemhoff en Rik van Niejenhuis. Adres: Haddingestraat 10.",
+        description: "Prijswinnend documentairemaker Arnold van Bruggen volgt vier PvdA-wethouders: Pieter Paul Slikker, Casper Gelderblom, Marianne Poelman en Dennis de Vries. Gemaakt ter gelegenheid van het 125-jarig bestaan van het CLB. Aansluitend gesprek met Groningse wethouders Carine Bloemhoff en Rik van Niejenhuis. Adres: Haddingestraat 10.",
         signup: true,
       },
       {
         id: "boek-presentatie",
-        title: "Boek & Presentatie: Een portret van GroenLinks",
+        title: "Een portret van GroenLinks",
         timeEnd: "16:00",
         locations: ["GL Pand"],
-        description: "Met Katinka Eikelenboom en special guests.",
+        description: "Inloop 14:00, start 14:30. Aan de hand van het nieuwe boek 'Een portret van GroenLinks: persoonlijke verhalen uit de partij' kijken we terug op 36 jaar GroenLinks in Groningen. Met speciale gasten zoals Katinka Eikelenboom, Farah Karimi en Gladys Meijas. Auteurs Lara de Brito en Sara Madou (uitgeverij Unieboek | Het Spectrum). Het boek is in beperkte oplage te koop voor €20.",
         signup: true,
       },
     ],
@@ -149,10 +178,17 @@ const schedule: TimeSlot[] = [
     timeEnd: "16:30",
     events: [
       {
+        id: "kinderen",
+        title: "Een topmiddag voor kinderen!",
+        locations: ["Circustent Babel"],
+        description: "Spelen en knutselen in een echte circustent! Allerlei leuke activiteiten voor kinderen van peuter tot basisschoolleeftijd. Gevarieerd programma met voor ieder wat wils. Als ouder ben je welkom, maar je kind kan ook veilig meedoen onder begeleiding van volwassen begeleiders. Adres: Neutronstraat 3.",
+        signup: true,
+      },
+      {
         id: "circus",
         title: "Ontdek jouw talent in het circus!",
         locations: ["Circustent Babel"],
-        description: "Koorddansen, jongleren, lopen op een bal, acrobatiek — onder begeleiding van echte circusartiesten. Voor kinderen én ouders! Bij acrobatiek leer je samenwerken, want alleen samen blijft een menselijke piramide staan. Vrijblijvend meedoen. Adres: Neutronstraat 3.",
+        description: "Koorddansen, jongleren, lopen op een bal en acrobatiek — onder begeleiding van echte circusartiesten. Bij acrobatiek leer je samenwerken: alleen samen blijft een menselijke piramide staan! Vrijblijvend meedoen. Voor kinderen én ouders. Adres: Neutronstraat 3.",
         signup: true,
       },
     ],
@@ -166,7 +202,7 @@ const schedule: TimeSlot[] = [
         id: "koor",
         title: "Workshop: Zing je mee?",
         locations: ["Noorderhaven"],
-        description: "Of je nu een volleerde zanger bent of alleen onder de douche zingt — iedereen is welkom! We studeren in korte tijd een krachtig, revolutionair PRO lied in, dat we 's avonds met het publiek delen. Adres volgt na aanmelding.",
+        description: "Of je nu een volleerde zanger bent of alleen onder de douche zingt — iedereen is welkom! We studeren in korte tijd een uniek, krachtig en revolutionair PRO lied in, dat we 's avonds met het publiek delen. Ben je erbij om het dak eraf te zingen? Adres volgt na aanmelding.",
         signup: true,
       },
     ],
@@ -180,7 +216,7 @@ const schedule: TimeSlot[] = [
         id: "de-ophef",
         title: "DE OPHEF",
         locations: ["Circustent Babel"],
-        description: "Na een dag vol programma komen we samen en gaan we gezamenlijk een nieuwe periode tegemoet. Dit bijzondere moment wordt gemarkeerd door een verrassing. Wat dat is? Bijzijn is meemaken!",
+        description: "Na een divers programma komen we samen en gaan we gezamenlijk een nieuwe periode tegemoet. Dit bijzondere moment wordt gemarkeerd door een bijzondere verrassing! Wat dat is? Tsja: bijzijn is meemaken voor deze unieke belevenis!",
         signup: false,
       },
     ],
@@ -194,7 +230,7 @@ const schedule: TimeSlot[] = [
         id: "borrel-bbq",
         title: "Borrel & BBQ",
         locations: ["Buiten bij De Loods"],
-        description: "Van vlees tot de lekkerste vega en vegan gerechten van de barbecue. Het glas heffen met elkaar.",
+        description: "Er wordt gebarbecued — van vlees tot de lekkerste vega en vegan gerechten — en we heffen het glas met elkaar.",
         signup: false,
       },
     ],
@@ -208,7 +244,7 @@ const schedule: TimeSlot[] = [
         id: "feest",
         title: "Feest!",
         locations: ["De Loods"],
-        description: "De voetjes van de vloer tijdens de spetterende afsluiting.",
+        description: "De voetjes van de vloer tijdens de spetterende afsluiting van de dag!",
         signup: false,
       },
     ],
@@ -363,6 +399,8 @@ export default function Home() {
               <a
                 key={tier.id}
                 href={tier.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group bg-white/10 hover:bg-white/20 border border-white/20 hover:border-white/40 rounded-xl p-5 text-center transition-all flex flex-col gap-2"
               >
                 <span className="font-bebas text-2xl text-white group-hover:scale-110 transition-transform inline-block">
