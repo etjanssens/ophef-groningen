@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
         source: "/",
         destination: "https://groningen.groenlinkspvda.nl",
         permanent: false,
+        basePath: false,
       },
     ];
   },
