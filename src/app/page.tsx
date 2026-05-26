@@ -125,10 +125,10 @@ const schedule: TimeSlot[] = [
         signup: true,
       },
       {
-        id: "circus",
-        title: "Ontdek jouw talent in het circus!",
+        id: "kinderen",
+        title: "Een topmiddag voor kinderen!",
         locations: ["Circustent Babel"],
-        description: "Koorddansen, jongleren, lopen op een bal en acrobatiek — onder begeleiding van echte circusartiesten. Bij acrobatiek leer je samenwerken: alleen samen blijft een menselijke piramide staan! Vrijblijvend meedoen. Voor kinderen én ouders. Adres: Neutronstraat 3.",
+        description: "Spelen en knutselen in een echte circustent! Allerlei leuke activiteiten voor kinderen van peuter tot basisschoolleeftijd. Gevarieerd programma met voor ieder wat wils. Als ouder ben je welkom, maar je kind kan ook veilig meedoen onder begeleiding van volwassen begeleiders. Adres: Neutronstraat 3.",
         signup: true,
       },
     ],
@@ -185,10 +185,10 @@ const schedule: TimeSlot[] = [
     timeEnd: "16:30",
     events: [
       {
-        id: "kinderen",
-        title: "Een topmiddag voor kinderen!",
+        id: "circus",
+        title: "Ontdek jouw talent in het circus!",
         locations: ["Circustent Babel"],
-        description: "Spelen en knutselen in een echte circustent! Allerlei leuke activiteiten voor kinderen van peuter tot basisschoolleeftijd. Gevarieerd programma met voor ieder wat wils. Als ouder ben je welkom, maar je kind kan ook veilig meedoen onder begeleiding van volwassen begeleiders. Adres: Neutronstraat 3.",
+        description: "Koorddansen, jongleren, lopen op een bal en acrobatiek — onder begeleiding van echte circusartiesten. Bij acrobatiek leer je samenwerken: alleen samen blijft een menselijke piramide staan! Vrijblijvend meedoen. Voor kinderen én ouders. Adres: Neutronstraat 3.",
         signup: true,
       },
     ],
