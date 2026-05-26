@@ -124,6 +124,13 @@ const schedule: TimeSlot[] = [
         description: "De groene en rode jasjes hebben we flink op voorraad en gaan we straks minder dragen. Geef ze een nieuw leven als tasje, etui of eigen ontwerp! Patronen en ideeën worden geleverd. Neem je naaimachine, lockmachine en naaigerei (knopen, ritsen) mee als je die hebt. Adres volgt na aanmelding.",
         signup: true,
       },
+      {
+        id: "circus",
+        title: "Ontdek jouw talent in het circus!",
+        locations: ["Circustent Babel"],
+        description: "Koorddansen, jongleren, lopen op een bal en acrobatiek — onder begeleiding van echte circusartiesten. Bij acrobatiek leer je samenwerken: alleen samen blijft een menselijke piramide staan! Vrijblijvend meedoen. Voor kinderen én ouders. Adres: Neutronstraat 3.",
+        signup: true,
+      },
     ],
   },
   {
@@ -182,13 +189,6 @@ const schedule: TimeSlot[] = [
         title: "Een topmiddag voor kinderen!",
         locations: ["Circustent Babel"],
         description: "Spelen en knutselen in een echte circustent! Allerlei leuke activiteiten voor kinderen van peuter tot basisschoolleeftijd. Gevarieerd programma met voor ieder wat wils. Als ouder ben je welkom, maar je kind kan ook veilig meedoen onder begeleiding van volwassen begeleiders. Adres: Neutronstraat 3.",
-        signup: true,
-      },
-      {
-        id: "circus",
-        title: "Ontdek jouw talent in het circus!",
-        locations: ["Circustent Babel"],
-        description: "Koorddansen, jongleren, lopen op een bal en acrobatiek — onder begeleiding van echte circusartiesten. Bij acrobatiek leer je samenwerken: alleen samen blijft een menselijke piramide staan! Vrijblijvend meedoen. Voor kinderen én ouders. Adres: Neutronstraat 3.",
         signup: true,
       },
     ],
