@@ -128,7 +128,7 @@ const schedule: TimeSlot[] = [
         id: "kinderen",
         title: "Een topmiddag voor kinderen!",
         locations: ["Circustent Babel"],
-        description: "Spelen en knutselen in een echte circustent! Allerlei leuke activiteiten voor kinderen van peuter tot basisschoolleeftijd. Gevarieerd programma met voor ieder wat wils. Als ouder ben je welkom, maar je kind kan ook veilig meedoen onder begeleiding van volwassen begeleiders. Adres: Neutronstraat 3.",
+        description: "Kom samen met je (klein)kind naar het Kinderprogramma en doe mee met verschillende activiteiten! Voor alle leeftijden, waarbij je zelf je (klein)kind begeleidt. Kom bouwen, kom knutselen, kom luisteren! • 13:00–14:30: Bouw je mee aan de stad van de toekomst? Met karton, duplo en houten treinrails — en je eigen fantasie natuurlijk! • 13:15–13:45: Voorleeshalfuurtje met PRO-fractielid Justine Jones, met een selectie boeken die passen bij PRO's idealen. • 14:00–14:30: Afvalvrij leven met kinderen — maak je eigen klei met PRO-fractieondersteuner Sam Veeman (zelf een bakje meenemen!). Adres: Neutronstraat 3.",
         signup: true,
       },
     ],
