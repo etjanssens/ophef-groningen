@@ -4,9 +4,16 @@ const locationColors: Record<string, string> = {
   "GL Pand": "bg-green-100 text-green-800",
   "PvdA Pand": "bg-red-100 text-red-800",
   "Circustent Babel": "bg-orange-100 text-orange-800",
-  "De Loods": "bg-purple-100 text-purple-800",
+  "De Loods van Kees": "bg-purple-100 text-purple-800",
   "Noorderhaven": "bg-blue-100 text-blue-800",
-  "Buiten bij De Loods": "bg-purple-100 text-purple-800",
+};
+
+const locationAddresses: Record<string, string> = {
+  "GL Pand": "Coehoornsingel 87",
+  "PvdA Pand": "Haddingestraat 10",
+  "Circustent Babel": "Neutronstraat 3",
+  "De Loods van Kees": "Friesestraatweg 448",
+  "Noorderhaven": "adres volgt",
 };
 
 function LocationBadge({ name }: { name: string }) {
@@ -141,7 +148,7 @@ const schedule: TimeSlot[] = [
         id: "proposters",
         title: "PRO-Posters maken met Minerva",
         timeEnd: "16:30",
-        locations: ["De Loods"],
+        locations: ["De Loods van Kees"],
         description: "Samen met Kees Hermanides en Minerva-studenten posters maken én drukken voor de gloednieuwe partij. In de kleuren en thema's van onze beweging maak jij knallers — voor onze panden, je slaapkamer of kantoor! Adres: Friesestraatweg 448.",
         signup: true,
       },
@@ -229,7 +236,7 @@ const schedule: TimeSlot[] = [
       {
         id: "borrel-bbq",
         title: "Borrel & BBQ",
-        locations: ["Buiten bij De Loods"],
+        locations: ["Circustent Babel"],
         description: "Er wordt gebarbecued en we heffen het glas met elkaar.",
         signup: true,
       },
@@ -243,7 +250,7 @@ const schedule: TimeSlot[] = [
       {
         id: "feest",
         title: "Feest!",
-        locations: ["De Loods"],
+        locations: ["Circustent Babel"],
         description: "De voetjes van de vloer tijdens de spetterende afsluiting van de dag!",
         signup: true,
       },
@@ -358,7 +365,7 @@ export default function Home() {
           <div className="flex flex-wrap gap-2 mb-10">
             {Object.entries(locationColors).map(([name, colors]) => (
               <span key={name} className={`text-xs font-medium px-2 py-1 rounded ${colors}`}>
-                {name}
+                {name}{locationAddresses[name] ? ` · ${locationAddresses[name]}` : ""}
               </span>
             ))}
           </div>
