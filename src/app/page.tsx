@@ -131,13 +131,6 @@ const schedule: TimeSlot[] = [
         description: "De groene en rode jasjes hebben we flink op voorraad en gaan we straks minder dragen. Geef ze een nieuw leven als tasje, etui of eigen ontwerp! Patronen en ideeën worden geleverd. Neem je naaimachine, lockmachine en naaigerei (knopen, ritsen) mee als je die hebt. Adres volgt na aanmelding.",
         signup: true,
       },
-      {
-        id: "kinderen",
-        title: "Een topmiddag voor kinderen!",
-        locations: ["Circustent Babel"],
-        description: "Kom samen met je (klein)kind naar het Kinderprogramma en doe mee met verschillende activiteiten! Voor alle leeftijden, waarbij je zelf je (klein)kind begeleidt. Kom bouwen, kom knutselen, kom luisteren! • 13:00–14:30: Bouw je mee aan de stad van de toekomst? Met karton, duplo en houten treinrails — en je eigen fantasie natuurlijk! • 13:15–13:45: Voorleeshalfuurtje met PRO-fractielid Justine Jones, met een selectie boeken die passen bij PRO's idealen. • 14:00–14:30: Afvalvrij leven met kinderen — maak je eigen klei met PRO-fractieondersteuner Sam Veeman (zelf een bakje meenemen!). Adres: Neutronstraat 3.",
-        signup: true,
-      },
     ],
   },
   {
@@ -192,10 +185,10 @@ const schedule: TimeSlot[] = [
     timeEnd: "16:30",
     events: [
       {
-        id: "circus",
-        title: "Ontdek jouw talent in het circus!",
+        id: "kinderen",
+        title: "Een topmiddag voor kinderen!",
         locations: ["Circustent Babel"],
-        description: "Koorddansen, jongleren, lopen op een bal en acrobatiek — onder begeleiding van echte circusartiesten. Bij acrobatiek leer je samenwerken: alleen samen blijft een menselijke piramide staan! Vrijblijvend meedoen. Voor kinderen én ouders. Adres: Neutronstraat 3.",
+        description: "Kom samen met je (klein)kind naar het Kinderprogramma en doe mee met verschillende activiteiten! Voor alle leeftijden, waarbij je zelf je (klein)kind begeleidt. Kom bouwen, kom knutselen, kom luisteren! • 14:30–16:00: Bouw je mee aan de stad van de toekomst? Met karton, duplo en houten treinrails — en je eigen fantasie natuurlijk! • 14:45–15:15: Voorleeshalfuurtje met PRO-fractielid Justine Jones, met een selectie boeken die passen bij PRO’s idealen. • 15:30–16:00: Afvalvrij leven met kinderen — maak je eigen klei met PRO-fractieondersteuner Sam Veeman (zelf een bakje meenemen!). Adres: Neutronstraat 3.",
         signup: true,
       },
     ],
